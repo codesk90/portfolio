@@ -1,4 +1,6 @@
 import './navbar.css';
+import Header from './Header';
+import { navItems } from './navbar.data';
 
 const Navbar = () => {
   return (
@@ -6,23 +8,16 @@ const Navbar = () => {
       <div className="nav-logo text-white">
         <image>PortFo</image>
       </div>
+      <Header />
       <div className="nav-link">
         <ul>
-          <li>
-            <a href="#home" className="text-white">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#works" className="text-white">
-              Works
-            </a>
-          </li>
-          <li>
-            <a href="#contact" className="text-white">
-              Contact
-            </a>
-          </li>
+          {navItems.map((navItem, i) => (
+            <li>
+              <a key={i} href={navItem.path} className="text-white">
+                {navItem.label}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
