@@ -16,5 +16,11 @@ export default Home;
 const styles = {
   container: {
     height: '100vh',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    // h1: {
+    //   textAlign: 'center',
+    // },
   },
 };

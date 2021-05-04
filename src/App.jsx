@@ -3,6 +3,7 @@ import Works from './components/pages/Works';
 import Layout from './components/layout/Layout';
 import { Box } from '@theme-ui/components';
 import Home from './components/pages/Home';
+import Contact from './components/pages/Contact';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Home />
         <About />
         <Works />
+        <Contact />
       </Layout>
     </Box>
   );
@@ -22,6 +24,5 @@ const styles = {
   layout: {
     maxWidth: '1920px',
     mx: 'auto',
-    p: '2em',
   },
 };
