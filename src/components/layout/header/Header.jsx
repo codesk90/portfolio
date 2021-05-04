@@ -43,7 +43,7 @@ const styles = {
   },
   title: {
     flexGrow: 1,
-    fontSize: '2em',
+    fontSize: '2.5em',
   },
   linkContainer: {
     display: 'flex',
@@ -52,6 +52,7 @@ const styles = {
       fontSize: '1.25em',
       px: '1.5em',
       cursor: 'pointer',
+      fontWeight: '300',
     },
   },
 };
