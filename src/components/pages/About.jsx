@@ -1,17 +1,20 @@
 import { Box } from '@theme-ui/components';
+import React from 'react';
 import { Element } from 'react-scroll';
 
-const Home = () => {
+const About = () => {
   return (
-    <Element name="home" id="Home">
+    <Element name="about" id="About">
       <Box sx={styles.container}>
-        <h1>This is Introduction</h1>
+        <Box className="home-content">
+          Hi, I'm Sun Kim. <br /> I'm a Front End Developer
+        </Box>
       </Box>
     </Element>
   );
 };
 
-export default Home;
+export default About;
 
 const styles = {
   container: {
