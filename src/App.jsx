@@ -1,5 +1,5 @@
 import About from './components/pages/About';
-import Works from './components/pages/Works';
+import Works from './components/pages/work/Works';
 import Layout from './components/layout/Layout';
 import { Box } from '@theme-ui/components';
 import Home from './components/pages/Home';

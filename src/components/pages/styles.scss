@@ -1,0 +1,33 @@
+#content {
+  .container {
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #home {
+  }
+
+  #about {
+    .container {
+      width: 50%;
+      margin: 0 auto;
+      p {
+        font-size: 1.75em;
+        line-height: 1.5;
+        letter-spacing: 0.05em;
+        span {
+          font-size: 1.25em;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  #contact {
+    .container {
+      height: 100vh;
+    }
+  }
+}

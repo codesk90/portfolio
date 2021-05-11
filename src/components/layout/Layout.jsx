@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
   return (
     <Fragment>
       <Header />
-      <main id="Content">{children}</main>
+      <main id="content">{children}</main>
     </Fragment>
   );
 };

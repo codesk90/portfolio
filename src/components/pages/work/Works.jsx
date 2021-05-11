@@ -1,13 +1,13 @@
 import { Element } from 'react-scroll';
 
-const Home = () => {
+const Works = () => {
   return (
-    <Element name="home" id="home">
+    <Element name="works" id="works">
       <div className="container">
-        <h1>This is Introduction</h1>
+        <h1>This is all about work</h1>
       </div>
     </Element>
   );
 };
 
-export default Home;
+export default Works;
