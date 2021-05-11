@@ -1,15 +1,14 @@
-import { Box, Container, Flex } from '@theme-ui/components';
 import React from 'react';
 import { Link } from 'react-scroll';
 import { navItems } from './navbar.data';
-// import './style.css';
+import './styles.scss';
 
 const Header = () => {
   return (
-    <Box as="header" id="Header" sx={styles.header}>
-      <Container sx={styles.container}>
-        <Box sx={styles.title}>Sun Kim</Box>
-        <Flex sx={styles.linkContainer}>
+    <header id="header">
+      <div className="container">
+        <div className="title">Sun Kim</div>
+        <div className="linkContainer">
           {navItems.map((navItem, i) => (
             <Link
               activeClass="active"
@@ -23,36 +22,10 @@ const Header = () => {
               {navItem.label}
             </Link>
           ))}
-        </Flex>
-      </Container>
-    </Box>
+        </div>
+      </div>
+    </header>
   );
 };
 
 export default Header;
-
-const styles = {
-  header: {
-    position: 'sticky',
-    top: 0,
-    p: '2em',
-  },
-  container: {
-    display: 'flex',
-    alignItems: 'center',
-  },
-  title: {
-    flexGrow: 1,
-    fontSize: '2.5em',
-  },
-  linkContainer: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    a: {
-      fontSize: '1.25em',
-      px: '1.5em',
-      cursor: 'pointer',
-      fontWeight: '300',
-    },
-  },
-};

@@ -1,18 +1,13 @@
-import { Box } from '@theme-ui/components';
-import React from 'react';
+import { Element } from 'react-scroll';
 
 const Contact = () => {
   return (
-    <Box name="contact" id="Contact" sx={styles.container}>
-      <h1>This is contact box</h1>
-    </Box>
+    <Element name="contact" id="contact">
+      <div className="container">
+        <h1>This is contact box</h1>
+      </div>
+    </Element>
   );
 };
 
 export default Contact;
-
-const styles = {
-  container: {
-    height: '100vh',
-  },
-};

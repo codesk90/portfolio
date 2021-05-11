@@ -1,0 +1,23 @@
+#header {
+  position: sticky;
+  top: 0;
+  padding: 2em;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .title {
+    flex-grow: 1;
+    font-size: 2.5em;
+  }
+  .linkContainer {
+    display: flex;
+    justify-content: space-between;
+    a {
+      font-size: 1.25em;
+      padding: 0 1.5em;
+      cursor: pointer;
+      font-weight: 300;
+    }
+  }
+}
