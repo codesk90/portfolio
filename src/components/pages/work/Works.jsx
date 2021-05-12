@@ -1,4 +1,5 @@
 import { Element } from 'react-scroll';
+import './work.scss';
 
 const Works = () => {
   return (

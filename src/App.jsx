@@ -1,28 +1,19 @@
 import About from './components/pages/About';
 import Works from './components/pages/work/Works';
 import Layout from './components/layout/Layout';
-import { Box } from '@theme-ui/components';
-import Home from './components/pages/Home';
 import Contact from './components/pages/Contact';
+import { Fragment } from 'react';
 
 function App() {
   return (
-    <Box as="div" sx={styles.layout}>
+    <Fragment>
       <Layout>
-        <Home />
         <About />
         <Works />
         <Contact />
       </Layout>
-    </Box>
+    </Fragment>
   );
 }
 
 export default App;
-
-const styles = {
-  layout: {
-    maxWidth: '1920px',
-    mx: 'auto',
-  },
-};

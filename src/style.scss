@@ -1,0 +1,16 @@
+$primaryColor: #8fc1e3;
+$secondaryColor: #5085a5;
+$thirdColor: #31708e;
+$fouthColor: #687864;
+$fifthColor: #f7f9fb;
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: $primaryColor;
+  color: $fifthColor;
+}
+
+a:hover {
+  color: #000;
+}

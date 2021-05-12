@@ -1,17 +1,31 @@
-import React from 'react';
-import { Element } from 'react-scroll';
+import React, { useState } from 'react';
+import { FaArrowDown } from 'react-icons/fa';
+import { Element, Link } from 'react-scroll';
 import './styles.scss';
 
 const About = () => {
+  const [icon, setIcon] = useState(false);
+
   return (
     <Element name="about" id="about">
       <div className="container">
-        <p className="home-content">
-          Hi, My name is <span>Sun Kim</span>. <br />
-          I'm a Front End Developer, I am a self-taught individual willing to
-          learn any new technology. I have built websites from groud-up using
-          PSD design
-        </p>
+        <div className="wrapper">
+          <h1>Sun M Kim</h1>
+          <p>Front End Developer</p>
+        </div>
+        <div className="work-button" onMouseEnter={() => <FaArrowDown />}>
+          <Link
+            activeClass="active"
+            to="works"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            Works
+            {icon}
+          </Link>
+        </div>
       </div>
     </Element>
   );
