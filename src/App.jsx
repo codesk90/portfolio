@@ -1,4 +1,4 @@
-import About from './components/pages/About';
+import Home from './components/pages/Home';
 import Works from './components/pages/work/Works';
 import Layout from './components/layout/Layout';
 import Contact from './components/pages/Contact';
@@ -8,7 +8,7 @@ function App() {
   return (
     <Fragment>
       <Layout>
-        <About />
+        <Home />
         <Works />
         <Contact />
       </Layout>

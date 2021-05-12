@@ -1,8 +1,8 @@
 export const navItems = [
   {
     offset: -113,
-    path: 'about',
-    label: 'About',
+    path: 'home',
+    label: 'Home',
   },
   {
     offset: 0,
