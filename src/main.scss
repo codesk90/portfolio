@@ -4,11 +4,19 @@ $thirdColor: #31708e;
 $fourthColor: #687864;
 $fifthColor: #f7f9fb;
 
+@import 'components/pages/style';
+@import 'components/pages/home/home';
+@import 'components/pages/work/work';
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background-color: $primaryColor;
   color: $fifthColor;
+}
+
+a {
+  cursor: pointer;
 }
 
 a:hover {

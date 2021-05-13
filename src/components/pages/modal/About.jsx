@@ -1,18 +1,13 @@
-import { FaLongArrowAltDown, FaLongArrowAltRight } from 'react-icons/fa';
+import { FaArrowDown } from 'react-icons/fa';
 import { Element, Link } from 'react-scroll';
-import './styles.scss';
 
-const Home = () => {
+const About = () => {
   return (
-    <Element name="home" id="home">
+    <Element name="about" id="about">
       <div className="container">
         <div className="wrapper">
           <h1>Sun M Kim</h1>
           <p>Front End Developer</p>
-          <div className="about-button">
-            <div className="about-button-title">About Me</div>
-            <FaLongArrowAltRight />
-          </div>
         </div>
         <div className="work-button">
           <Link
@@ -25,7 +20,7 @@ const Home = () => {
           >
             Works
             <div className="work-button-arrow">
-              <FaLongArrowAltDown />
+              <FaArrowDown />
             </div>
           </Link>
         </div>
@@ -34,4 +29,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default About;

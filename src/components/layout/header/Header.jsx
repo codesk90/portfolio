@@ -13,6 +13,7 @@ const Header = () => {
             to="home"
             spy={true}
             smooth={true}
+            offset={-113}
             duration={500}
           >
             SK
