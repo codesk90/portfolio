@@ -4,7 +4,7 @@ import { Element, Link } from 'react-scroll';
 const Home = () => {
   return (
     <Element name="home" id="home">
-      <div className="container">
+      <section className="container">
         <div className="wrapper">
           <h1>Sun M Kim</h1>
           <p>Front End Developer</p>
@@ -26,13 +26,13 @@ const Home = () => {
             offset={0}
             duration={500}
           >
-            Works
+            Click Here for Works
             <div className="work-button-arrow">
               <FaLongArrowAltDown />
             </div>
           </Link>
         </div>
-      </div>
+      </section>
     </Element>
   );
 };
