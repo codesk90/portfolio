@@ -7,7 +7,12 @@ const Works = () => {
     <Element name="works" id="works">
       <section className="container">
         {works.map((work) => (
-          <Work key={work.id} name={work.name} website={work.website} />
+          <Work
+            key={work.id}
+            name={work.name}
+            website={work.website}
+            image={work.image}
+          />
         ))}
       </section>
     </Element>
