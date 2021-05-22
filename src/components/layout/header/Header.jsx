@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header id="header">
       <div className="container">
-        <div className="title">
+        <div className="header__title">
           <Link
             activeClass="active"
             to="home"
@@ -16,7 +16,7 @@ const Header = () => {
             offset={-113}
             duration={500}
           >
-            SK
+            <img className="header__image" src={`/images/white-logo.png`} alt="Sun Kim's Logo" />
           </Link>
         </div>
         <div className="linkContainer">
